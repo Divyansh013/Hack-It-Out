@@ -1,10 +1,10 @@
 ## Team name
 Epsilon Delta
 ## Team members
-Ayush Beniwal
-Saiyam Jain
-Amit Sharma
-Ayush Mishra
+Ayush Beniwal <br>
+Saiyam Jain <br>
+Amit Sharma <br>
+Ayush Mishra <br>
 ## Idea
 Fill idea here
 
