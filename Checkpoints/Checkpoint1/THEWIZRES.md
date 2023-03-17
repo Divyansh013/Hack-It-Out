@@ -14,8 +14,7 @@ We choose the EDTECH problem, In this we will be focusing on these main things:-
 7) Courses for all age groups - We provide courses for school level student as per the Government new rule, for higher education we provide related to professional courses like, B.Tech, M.Tech, B.Sc, M.Sc, and many more. We also provide EXTRACURRICULAR COURSES like Dance Course, Music Course, Painting Course etc. 
 
 ## Repository link
-https://ed-teach-tau.vercel.app/
 https://github.com/moinahmad25/EdTeach
 
 ## Any other relevant link
-
+https://ed-teach-tau.vercel.app/
