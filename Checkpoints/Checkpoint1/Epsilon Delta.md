@@ -18,7 +18,7 @@ Our Idea, MedifyMe, is a web application that aims to simplify healthcare manage
 
 <li>Appointments: Patients can view their appointments, schedule new appointments, and receive reminders about upcoming appointments. The platform also allows patients to pay for appointments and tests using integrated payment systems.</li>
 
-<li>Communication: MedifyMe provides an easy and secure communication channel for patients and doctors to exchange messages and medical information. Patients can ask questions, get advice, and share updates with their doctors in a timely and convenient manner. Payments for various appointments and tests can be made on the platform itself, reducing the hassle.</li>
+MedifyMe provides an easy and secure communication channel for patients and doctors to exchange messages and medical information. Patients can ask questions, get advice, and share updates with their doctors in a timely and convenient manner. Payments for various appointments and tests can be made on the platform itself, reducing the hassle.
 </ol>
 
 ## Repository link
