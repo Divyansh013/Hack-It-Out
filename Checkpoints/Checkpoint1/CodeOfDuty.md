@@ -20,12 +20,11 @@ We are evaluating the students according to certain criterias and then categoris
   
 For these WE  are evaluating students on the basis of these criteria :  
   
-1.Their *CLASS ATTENTIVITY*  
-  Here we are giving them previous class questions in between the class to check whether the student is attending the class or not  
+1. Their *CLASS ATTENTIVITY* - Here we are giving them previous class questions in between the class to check whether the student is attending the class or not  
   
-2.*RANGE OF TIME* - Duration for which he/she *attended the class*  
+2. *RANGE OF TIME* - Duration for which he/she *attended the class*  
   
-3.*A SMALL MCQ*  test at the end of the class  
+3. *A SMALL MCQ*  test at the end of the class  
   
 On the basis of these a chart is prepared of students, then a schedule will be generated according to the categories of students.  
   
