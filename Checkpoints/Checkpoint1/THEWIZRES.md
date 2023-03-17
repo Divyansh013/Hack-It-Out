@@ -15,6 +15,7 @@ We choose the EDTECH problem, In this we will be focusing on these main things:-
 
 ## Repository link
 https://ed-teach-tau.vercel.app/
+https://github.com/moinahmad25/EdTeach
 
 ## Any other relevant link
 
