@@ -1,8 +1,10 @@
 ## Team name
-Fill team name here
+Epsilon Delta
 ## Team members
-Fill team members name here
-
+Ayush Beniwal
+Saiyam Jain
+Amit Sharma
+Ayush Mishra
 ## Idea
 Fill idea here
 
