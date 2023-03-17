@@ -2,10 +2,10 @@
 Pegasus
 
 ## Team members
-Mann Bajpai
-Samminga Sainath
-Nilesh Gupta
-Naveen Karaka
+1. Mann Bajpai
+2. Samminga Sainath
+3. Nilesh Gupta
+4. Naveen Karaka
 
 ## Idea
 We are making a platform for education administration for any educational institution which will consist of all the things that a student does offline in an academic institution and in which the process is very tedious, like:
