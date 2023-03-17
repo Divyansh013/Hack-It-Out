@@ -1,12 +1,12 @@
 ## Team name
-CODE OF DUTY
-
-## Team members
-Aman Kumar
-Aditya Verma
-Yash Raj
-Harsh Raj
-
+CODE OF DUTY  
+  
+## Team members  
+Aman Kumar  
+Aditya Verma  
+Yash Raj  
+Harsh Raj  
+  
 ## Idea
 
 Problem Statement - **Student learning**   
