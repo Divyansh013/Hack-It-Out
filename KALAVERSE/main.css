@@ -1,0 +1,191 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    /* position: relative;
+    top: 20px; */
+}
+.logoAndName{
+    width: 100px;
+    height: 40px;
+    /* border: 2px solid red; */
+    position: relative;
+    /* top: 20px;  */
+    left: 90px;
+}
+.logoAndName img{
+    width: 150px;
+}
+.searchBar img{
+    width: 25px;
+    height: 25px;   
+    position: relative;
+    top: 9px; 
+    left: 35px;
+    z-index: 1;
+}
+#SearchBar{
+    width: 1000px;
+    height: 40px;
+    border-radius: 76px;
+    position: relative;
+    /* top: 20px; */
+    /* border: 2px solid red; */
+}
+
+.LoginOrRegister{
+    width: 100px;
+    height: 40px;
+    /* border: 2px solid red; */
+    position: relative;
+    /* top: 20px;  */
+    right: 100px;   
+}
+#loginBtn{
+    background-color: rgb(226, 84, 226);
+    border-radius: 76px;
+}
+.courses{
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid red; */
+    /* position: relative;
+    top: px; */
+    display: flex;
+    justify-content: space-between; 
+    padding:10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+#firstCourses{
+    list-style: none;
+    position: relative;
+    left: 20px;
+}
+#firstCourses:hover{
+    color: purple;
+}
+#secondCourses{
+    list-style: none;
+}
+#secondCourses:hover{
+    color: purple;
+}
+#thirdCourses{
+    list-style: none;
+}
+#thirdCourses:hover{
+    color: purple;
+}
+#fourthCourses{
+    list-style: none;
+}
+#fourthCourses:hover{
+    color: purple;
+}
+#fifthCourses{
+    list-style: none;
+}
+#fifthCourses:hover{
+    color: purple;
+}
+#sixthCourses{
+    list-style: none;
+    position: relative;
+    right: 20px;
+}
+#sixthCourses:hover{
+    color: purple;
+}
+
+
+.container{
+    display:flex;
+background-image: linear-gradient(to bottom right, rgb(203, 190, 255), rgb(255, 255, 255));
+margin: 0;
+}
+.text{
+    color:rgb(0, 0, 0);
+    font-size:2rem;
+;
+    padding-top:20%;
+    font-family: 'Inter', sans-serif;
+}
+.main{
+width:970px;
+height: 800px;
+/* height: 10px; */
+}
+.container2{
+    display:flex;
+    margin:1%;
+    border: 1px solid black;
+
+}
+.trending{
+font-size:2.6rem;
+color:rgb(190, 10, 40);
+text-align: center;
+font-weight: bolder;
+font-family: 'Lobster', cursive;
+}
+
+
+
+/* slider */
+/* slider */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #666af9;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #9c6dff;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
