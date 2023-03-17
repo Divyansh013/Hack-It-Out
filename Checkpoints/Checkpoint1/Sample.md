@@ -1,13 +1,17 @@
 ## Team name
-Fill team name here
+teamsz
 ## Team members
-Fill team members name here
+sagar kumar pathak
+himanshu gupta
+harshit saini
+niharika singh
 
 ## Idea
-Fill idea here
+To provide education to underprevileged childern who lives in remote areas.
+we are providing our drive link.
 
 ## Repository link
-
+https://drive.google.com/drive/folders/1Z3SUyQApunO0ugzsC14KzbNMivMHe3jd?usp=sharing
 
 ## Any other relevant link
 
