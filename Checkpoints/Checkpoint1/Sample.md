@@ -1,7 +1,8 @@
 ## Team name
-Fill team name here
+CSS
 ## Team members
-Fill team members name here
+1. Mayur Kumar
+2. Gaurav
 
 ## Idea
 Following are the set of feature we want to include into our webapp/ digital platform so that the employees should feel more inclusive into the works and the employers can effectively monitor them based on their performance to increase the productivity.
