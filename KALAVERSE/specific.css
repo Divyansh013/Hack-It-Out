@@ -1,0 +1,43 @@
+.shead{
+
+}
+.thead{
+
+}
+.vtmain{
+    display:flex;
+    margin:10%;
+}
+.video{
+    height:500px;
+    width: 700px;
+    border:2px solid black;
+
+}
+.teacher{
+    height:500px;
+    width: 400px;
+    border:2px solid black;
+
+}
+.etmain{
+    display:flex;
+    margin:10%;
+}
+.elib{
+    height:500px;
+    width: 400px;
+    border:1px solid red;
+}
+.teachername{
+    font-size:2rem;
+    height:500px;
+    width: 400px; 
+    color:red;
+    border:1px solid green;
+    
+
+}
+.sdash{
+font-size:2rem;
+}
