@@ -46,7 +46,7 @@
                    Not Registred : <a href="main.html">Signup now</a>
                 </div>
              </form>
-             <form action="#" class="signup">
+             <!-- <form action="#" class="signup">
                 <div class="field">
                    <input type="text" placeholder="Email Address" required>
                 </div>
@@ -60,7 +60,7 @@
                    <div class="btn-layer"></div>
                    <input type="submit" value="Signup">
                 </div>
-             </form>
+             </form> -->
           </div>
        </div>
     </div>
@@ -84,5 +84,51 @@
          return false;
        });
     </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js'
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"
+    // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCCeWQvvzrsAT3OorxfeOwYFdgdxK_gAsU",
+        authDomain: "kla-verse.firebaseapp.com",
+        projectId: "kla-verse",
+        storageBucket: "kla-verse.appspot.com",
+        messagingSenderId: "929037859456",
+        appId: "1:929037859456:web:ec4222eb2d9435ca088465"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+            initializeApp(firebaseConfig);//initilise fire base kerne ke liye
+                                const root = getDatabase();
+                                //WRITE OR TAKE VALUE IN DATABASE
+                                function writeUserData(x,y,z,b,p) {
+                                  let id = Date.now();
+                                set(ref(root, 'users/' + id), {
+                              
+                                 
+                                 address: x,
+                                    email: y,
+                                   name : z,
+                                   buy:b,
+                                  phone:p
+                                });
+                           
+                              }
+                                                                                            //TO SAVE THE DATA AFTER CLICKING ON SIGN UP BUTTON 
+                                                                                            submit.addEventListener('click',(e) => {
+                                                                                            var email = document.getElementById('email').value;
+                                                                                            var name = document.getElementById('name').value;
+                                                                                            var address = document.getElementById('feedback').value;
+                                                                                            var buy = document.getElementById('buy').value;
+                                                                                            var phone = document.getElementById('phone').value;
+                                                                                              writeUserData(address,email,name,buy,phone)
+                                                                                              });
+</script>
  </body>
 </html>
