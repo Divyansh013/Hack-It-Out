@@ -1,0 +1,15 @@
+Team Name: FullStackOverflow
+
+Team Members: 
+1.SAHIL SINGH
+2.AKASH VANNAM
+
+IDEA:
+-CHECKPOINT 2
+-functionalities described in Idea Report of Checkpoint 1 have been implemented
+-requisite routes set,doc models modified and used/referenced where doc field data was bidirectionally required to be accessed .
+
+
+REPOSITORY LINK:
+https://github.com/octosapien/Hack-It-Out-fullstackoverflow-
+
