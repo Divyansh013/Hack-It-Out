@@ -1,13 +1,12 @@
-## Team Name
-Fill team name here
+## Bug Busters
 
-## Team members name
-Fill details here
+## Team members 
+
+## - Atul Singh (TX231361)
+## - Atul Vaishya (TX231359)
 
 ## A brief about work done till now
-Tell what have you done and how much part is left
 
-## Repository link
+<h2> The backend of the system has been created and frontend is bieng synced with the backend system and the stack used is MERN, which is scalable and easy to maintain. The whole work process will be finished ASAP. </h2>
 
-
-## Any other link
+## [Repository link] (https://github.com/atulsingh369/Bug-Busters)
