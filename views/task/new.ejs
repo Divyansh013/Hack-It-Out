@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Task</title>
+</head>
+<body>
+    
+
+    <h2>Create new task</h2>
+
+    <form action="/professor/<%=prof_._id %>/class/<%= class_._id%>/task" method="POST">
+        <label for="_task">Enter Task</label>
+        <input type="textarea" id="_task" name="task">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

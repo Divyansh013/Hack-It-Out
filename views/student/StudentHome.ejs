@@ -1,2 +1,17 @@
 <h1>HELLO <%= stud.name %></h1>
 <h1>These are your classes!</h1>
+
+<ul>
+    
+    <% for(x of stud.classes){ %>
+      
+        <li><a href="/student/<%=stud._id.toString()%>/class/<%=x._id.toString()%>"><%= x.name %></a></li>
+        <% } %>
+   
+
+</ul>
+
+<a href="/student/<%= stud._id.toString()  %>/class/join">JOIN Class</a>
+
+<br>
+<a href="/">Logout</a>

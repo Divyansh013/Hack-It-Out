@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Class = require('../models/class.js')
 const Schema = mongoose.Schema;
 
 const ProfessorSchema= new Schema({
@@ -10,9 +11,10 @@ const ProfessorSchema= new Schema({
         type:Number,
         required:true
     },   
-    pclasses:{
-        type:[String]
-    }
-});
+    pclasses:[{
+        type:Schema.Types.ObjectId,
+        ref:'Class'
+    }]
+}); 
 
 module.exports= mongoose.model('Professor',ProfessorSchema);

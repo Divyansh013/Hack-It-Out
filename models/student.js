@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Class = require('../models/class.js')
 const Schema = mongoose.Schema;
 
 const StudentSchema= new Schema({
@@ -10,20 +11,41 @@ const StudentSchema= new Schema({
         type:Number,
         required:true
     },
+    password:{
+        type:String,
+        required:true
+    },
     semester:{
-        type:String
-           
+        type:String   
     },
     mail:{
         type:String
     },
-    classes:{
-        type:[String]
-    },
-    password:{
-        type:String,
-        required:true
-    }
+    classes:[{
+        type:Schema.Types.ObjectId,
+        ref:'Class'
+    }],
+    tasks:{
+        type:[
+
+        {
+          task:{
+            type:String,
+            required:true
+          },
+          eval:{
+            type:Number,
+            required:true,
+            min:-1,
+            max:10
+          }
+        }
+        // type:Map,
+        // of:Number//-1 means due , 0 to 10 means score/gradefor that task
+    //tasks is now an array of string number pairs
+    ],
+    default:[{task:"sample",eval:10}]
+}
 });
 
 module.exports= mongoose.model('Student',StudentSchema);

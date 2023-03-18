@@ -1,6 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Prof Home Page</title>
+</head>
+<body>
 
-
-<p>Professor Name :<%= prof.name  %></p>
+    <p>Professor Name :<%= prof.name  %></p>
 
 <h1>Classes :</h1>
+<ul>
+    
+    <% for(x of prof.pclasses){ %>
+      
+        <li><a href="/professor/<%=prof._id.toString()%>/class/<%=x._id.toString()%>"><%= x.name %></a></li>
+        <% } %>
+   
+
+</ul>
+
+<a href="/professor/<%= prof._id.toString()  %>/class/new">Create Class</a>
+
+<br>
+<a href="/">Logout</a>
+
+
+<script scr="app.js"></script>
+
+    
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Class</title>
+</head>
+<body>
+
+    <h1>Join Class</h1>
+    <form action="/student/<%= stud._id.toString()%>/class/join" method="POST">
+        <label for="_key">CLass-KEY</label>
+        <input type="text" id="_key" name="key">
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
