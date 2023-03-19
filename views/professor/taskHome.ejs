@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tasks</title>
+</head>
+<body> -->
+
+    <% layout('./layout/boilerplate')%>
+    <div class="col-6 offset-3 card">
+        <h1>Your Tasks</h1>
+
+    <ul>
+        
+        <% for(x of obj.arr){ %>
+           <li>
+            <div> <b>Task Name:: <a href="/task/<%=x.full._id%>/students"> <%= x.key %></a></b> </div>
+            <div> <i>Task Description :<%= x.desc %></i> </div>
+            <div>Evaluation=<%= x.value %></div>
+            
+           </li>
+         <% } %>
+    </ul>
+
+    </div>
+    
+
+    <a href="/professor/<%=prof_._id%>/class/:<%= class_._id%>/task/new" class="btn btn-success col-6 offset-3">Create New</a>
+<!--     
+</body>
+</html> -->

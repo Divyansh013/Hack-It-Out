@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Status</title>
+</head>
+<body> -->
+    <% layout('./layout/boilerplate')%>
+    <div class="col-6 offset-3 card">
+
+        <h1>Task status for the class</h1>
+    <ul>
+        <% let i=0; %>
+        <% for([key,value] of obj.arr[i].tasks){ %>
+          <li>
+            
+            <div>Student Name: <%= obj.arr[i].name%> </div>
+           
+            <div>Evaluation:</div>
+            <% if(value==-1){ %>
+                <div>
+                        Due.
+                </div>
+            <% } %>
+            <%  if(value==0){ %>
+                <div>
+                    Submitted. Not Graded.
+                    <form action="" method="POST">
+                        
+                    </form>
+
+                </div>
+            <% } %>
+            <% if(value>=1){ %>
+                <div>
+                   Grade: <%=value %>
+                </div>
+            <% } %>
+            
+
+            
+            
+          </li>
+        <% i++; if(i>=obj.arr.length)break;} %>
+    </ul>
+    </div>
+    
+    
+
+<!--     
+</body>
+</html> -->

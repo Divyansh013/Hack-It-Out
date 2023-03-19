@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Class</title>
 </head>
-<body>
+<body> -->
+    <% layout('./layout/boilerplate')%>
 
     <h1>Create new class</h1>
     <form action="/professor/<%= prof._id.toString() %>/class/new" method="POST">
         <label for="_name"></label>
         <input type="text"  id="_name" name="name">
-        <button>Submit</button>
+        <button class="btn btn-success">Submit</button>
     </form>
     
-</html>
+<!-- </html> -->

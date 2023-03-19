@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,23 @@
     <title>New Task</title>
 </head>
 <body>
-    
-
-    <h2>Create new task</h2>
+     -->
+     <% layout('./layout/boilerplate')%>
+     <div class="col-6 offset-3 card">
+        <h2>Create new task</h2>
 
     <form action="/professor/<%=prof_._id %>/class/<%= class_._id%>/task" method="POST">
-        <label for="_task">Enter Task</label>
-        <input type="textarea" id="_task" name="task">
-        <button>Submit</button>
+        <label for="_name">Enter Task Name</label>
+        <input type="text" id="_name" name="name">
+        <br>
+        <label for="_text">Enter Task Details</label>
+        <input type="textarea" id="_text" name="text">
+        <br>
+        <button class="btn btn-success">Submit</button>
     </form>
-</body>
-</html>
+
+     </div>
+
+    
+<!-- </body>
+</html> -->

@@ -1,23 +1,21 @@
 const mongoose = require('mongoose');
-const Student = require('../models/student.js');
+const Class = require('../models/class.js')
 
 const Schema = mongoose.Schema;
 
-const ClassSchema= new Schema({
+const TaskSchema= new Schema({
     name:{
         type:String,
         required:true
     },
-    semester:{
-        type:String
+    text:{
+        type:String,
+        required:true
            
     },
-    students:[{
+    parentClass:{
         type:Schema.Types.ObjectId,
-        ref:'Student'
-    }],
-    tasks:{
-        type:[String]
+        ref:'Class'
     },
     key:{
         type:Number,
@@ -25,4 +23,4 @@ const ClassSchema= new Schema({
     }
 });
 
-module.exports= mongoose.model('Class',ClassSchema);
+module.exports= mongoose.model('Task',TaskSchema);

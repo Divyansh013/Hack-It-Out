@@ -1,6 +1,9 @@
+<% layout('./layout/boilerplate')%>
 
 
-<h1>Student Login</h1>
+<div class="col-6 offset-3 card">
+
+    <h1>Student Login</h1>
 
 <form action="/student/enter" method="POST">
    
@@ -12,5 +15,6 @@
         <label for="_password">Enter Password:</label>
         <input type="password" id="_password" name="password">
     </div>
-    <button type="submit">Login</button>
+    <button type="submit" class="btn btn-success col-6 offset-3">Login</button>
 </form>
+</div>

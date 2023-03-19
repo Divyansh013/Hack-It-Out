@@ -25,7 +25,7 @@ const StudentSchema= new Schema({
         type:Schema.Types.ObjectId,
         ref:'Class'
     }],
-    tasks:{
+   /* tasks:{
         type:[
 
         {
@@ -45,7 +45,13 @@ const StudentSchema= new Schema({
     //tasks is now an array of string number pairs
     ],
     default:[{task:"sample",eval:10}]
-}
+}*/
+    tasks:{
+        type:Map,
+        of:Number,
+        required:true,
+        default:new Map([["sample1",10],["sample2",10]])
+    }
 });
 
 module.exports= mongoose.model('Student',StudentSchema);

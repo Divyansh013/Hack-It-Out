@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Prof Home Page</title>
 </head>
-<body>
+<body> -->
+    <% layout('./layout/boilerplate')%>
+    <div class="col-6 offset-3 card" > 
 
-    <p>Professor Name :<%= prof.name  %></p>
+        <h1>Professor Name :<%= prof.name  %></h1>
 
-<h1>Classes :</h1>
+<h3>Classes :</h3>
 <ul>
     
     <% for(x of prof.pclasses){ %>
@@ -22,15 +24,15 @@
 
 </ul>
 
-<a href="/professor/<%= prof._id.toString()  %>/class/new">Create Class</a>
+    </div>
+    <a href="/professor/<%= prof._id.toString()  %>/class/new" class="col-6 offset-3 btn btn-info ">Create Class</a>
 
 <br>
-<a href="/">Logout</a>
-
-
-<script scr="app.js"></script>
-
+<a href="/"  class="col-6 offset-3 btn btn-danger">Logout</a>
+    
+<!-- <script scr="app.js"></script> -->
+<!-- 
     
 </body>
 </html>
-
+ -->
