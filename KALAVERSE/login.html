@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <div class="loginmain">
+    <div class="wrapper">
+       <div class="title-text">
+          <div class="title login">
+             Login
+          </div>
+          <div class="title signup">
+             Signup
+          </div>
+       </div>
+       <div class="form-container">
+          <div class="slide-controls">
+             <input type="radio" name="slide" id="login" checked>
+             <input type="radio" name="slide" id="signup">
+             <label for="login" class="slide login">Login</label>
+             <label for="signup" class="slide signup">Signup</label>
+             <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+             <form action="#" class="login">
+                <div class="field">
+                   <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                   <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link">
+                   <a href="#">Forgot password?</a>
+                </div>
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+
+                  <a href="main.html"> <input type="submit" value="Login"></a>
+                </div>
+                <div class="signup-link">
+                   Not Registred : <a href="main.html">Signup now</a>
+                </div>
+             </form>
+             <!-- <form action="#" class="signup">
+                <div class="field">
+                   <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                   <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                   <input type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" value="Signup">
+                </div>
+             </form> -->
+          </div>
+       </div>
+    </div>
+   </div>
+    <script>
+       const loginText = document.querySelector(".title-text .login");
+       const loginForm = document.querySelector("form.login");
+       const loginBtn = document.querySelector("label.login");
+       const signupBtn = document.querySelector("label.signup");
+       const signupLink = document.querySelector("form .signup-link a");
+       signupBtn.onclick = (()=>{
+         loginForm.style.marginLeft = "-50%";
+         loginText.style.marginLeft = "-50%";
+       });
+       loginBtn.onclick = (()=>{
+         loginForm.style.marginLeft = "0%";
+         loginText.style.marginLeft = "0%";
+       });
+       signupLink.onclick = (()=>{
+         signupBtn.click();
+         return false;
+       });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js'
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"
+    // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCCeWQvvzrsAT3OorxfeOwYFdgdxK_gAsU",
+        authDomain: "kla-verse.firebaseapp.com",
+        projectId: "kla-verse",
+        storageBucket: "kla-verse.appspot.com",
+        messagingSenderId: "929037859456",
+        appId: "1:929037859456:web:ec4222eb2d9435ca088465"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+            initializeApp(firebaseConfig);//initilise fire base kerne ke liye
+                                const root = getDatabase();
+                                //WRITE OR TAKE VALUE IN DATABASE
+                                function writeUserData(x,y,z,b,p) {
+                                  let id = Date.now();
+                                set(ref(root, 'users/' + id), {
+                              
+                                 
+                                 address: x,
+                                    email: y,
+                                   name : z,
+                                   buy:b,
+                                  phone:p
+                                });
+                           
+                              }
+                                                                                            //TO SAVE THE DATA AFTER CLICKING ON SIGN UP BUTTON 
+                                                                                            submit.addEventListener('click',(e) => {
+                                                                                            var email = document.getElementById('email').value;
+                                                                                            var name = document.getElementById('name').value;
+                                                                                            var address = document.getElementById('feedback').value;
+                                                                                            var buy = document.getElementById('buy').value;
+                                                                                            var phone = document.getElementById('phone').value;
+                                                                                              writeUserData(address,email,name,buy,phone)
+                                                                                              });
+</script>
+ </body>
+</html>
