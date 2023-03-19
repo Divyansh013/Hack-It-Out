@@ -1,0 +1,25 @@
+
+<% layout('./layout/boilerplate')%>
+
+<div  class="col-6 offset-3 card">
+    <h1>Student Registration</h1>
+
+    <form action="/student/new" method="POST">
+
+        <div>
+            <label for="_name">Enter NAME:</label>
+            <input type="text" id="_name" name="name">
+        </div>
+        <div>
+            <label for="_roll">Enter Roll number:</label>
+            <input type="number" id="_roll" name="roll">
+        </div>
+        <div>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-success col-6 offset-3 ">Register</button>
+    </form>
+</div>
+
+

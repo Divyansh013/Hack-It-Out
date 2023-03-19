@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof Login</title>
+</head>
+<body> -->
+
+    <% layout('./layout/boilerplate')%>
+
+    <div  class="col-6 offset-3 card">
+        <h1>Professor login</h1>
+<form action='/professor/enter' method="POST">
+
+    <label for="_name">Professor Name:</label>
+    <input type="text" id="_name" name="name">
+    <label for="_uid">Professor UID:</label>
+    <input type="text" id="_uid" name="uid">
+
+   
+    <button class="btn btn-success">Submit</button>
+
+</form>
+
+    </div>
+    
+    
+    
+    
+<!-- </body>
+</html> -->

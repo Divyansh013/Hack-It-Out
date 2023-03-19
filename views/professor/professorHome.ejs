@@ -1,0 +1,38 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Prof Home Page</title>
+</head>
+<body> -->
+    <% layout('./layout/boilerplate')%>
+    <div class="col-6 offset-3 card" > 
+
+        <h1>Professor Name :<%= prof.name  %></h1>
+
+<h3>Classes :</h3>
+<ul>
+    
+    <% for(x of prof.pclasses){ %>
+      
+        <li><a href="/professor/<%=prof._id.toString()%>/class/<%=x._id.toString()%>"><%= x.name %></a></li>
+        <% } %>
+   
+
+</ul>
+
+    </div>
+    <a href="/professor/<%= prof._id.toString()  %>/class/new" class="col-6 offset-3 btn btn-info ">Create Class</a>
+
+<br>
+<a href="/"  class="col-6 offset-3 btn btn-danger">Logout</a>
+    
+<!-- <script scr="app.js"></script> -->
+<!-- 
+    
+</body>
+</html>
+ -->

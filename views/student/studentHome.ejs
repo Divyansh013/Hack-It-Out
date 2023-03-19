@@ -1,0 +1,23 @@
+<% layout('./layout/boilerplate')%>
+
+<div class="card col-6 offset-3">
+    
+<h1>HELLO <%= stud.name %></h1>
+<h2>These are your classes!</h2>
+
+<ul>
+    
+    <% for(x of stud.classes){ %>
+      
+        <li><a href="/student/<%=stud._id.toString()%>/class/<%=x._id.toString()%>"><%= x.name %></a></li>
+        <% } %>
+   
+
+</ul>
+
+<a href="/student/<%= stud._id.toString()  %>/class/join" class="btn btn-info">JOIN Class</a>
+
+<br>
+<a href="/" class="btn btn-danger">Logout</a>
+
+</div>

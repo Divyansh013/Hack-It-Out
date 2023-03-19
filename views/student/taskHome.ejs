@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tasks</title>
+</head>
+<body> -->
+    <% layout('./layout/boilerplate')%>
+    <div class="card col-6 offset-3">
+
+    
+    <h1>Your Tasks</h1>
+    
+     <ul>
+        <% let i=0; %>
+      <% for([key,value] of stud_.tasks){ %>
+        
+        <div class="card col-6 offset-3"> 
+            <li>
+                <div> 
+                    <b>Task Name:</b> <%=obj.arr[i]%> <br>
+                    <% if(value==-1) {%>
+                        <div>
+                            <button  class="btn btn-warning">Upload.</button> 
+                            <br>
+    
+                            <form action="/student/<%=stud_._id%>/task/<%= key %>/submit" method="POST">
+                                
+                                <button  class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+                    <% } %>
+                    <% if(value==0) {%>
+                        
+                        <div>Submitted .Not Graded .</div>
+                    <% } %>   
+                    
+                    <% if(value>=1) {%>
+                    <b>Evaluation</b> <%= value %>
+                    <% } %>
+                </div>
+            </li>
+        </div>
+
+      <% i++;} %>
+
+     </ul>
+    </div>
+
+
+      
+
+
+
+
+<!--    
+    
+</body>
+</html> -->

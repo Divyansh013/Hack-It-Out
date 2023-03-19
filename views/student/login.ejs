@@ -1,0 +1,20 @@
+<% layout('./layout/boilerplate')%>
+
+
+<div class="col-6 offset-3 card">
+
+    <h1>Student Login</h1>
+
+<form action="/student/enter" method="POST">
+   
+    <div>
+        <label for="_roll">Enter Roll number:</label>
+        <input type="number" id="_roll" name="roll">
+    </div>
+    <div>
+        <label for="_password">Enter Password:</label>
+        <input type="password" id="_password" name="password">
+    </div>
+    <button type="submit" class="btn btn-success col-6 offset-3">Login</button>
+</form>
+</div>

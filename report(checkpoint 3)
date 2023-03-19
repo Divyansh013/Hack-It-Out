@@ -1,0 +1,27 @@
+Team Name: FullStackOverflow
+
+Team Members: 
+1.SAHIL SINGH
+2.AKASH VANNAM
+
+IDEA:
+-CHECKPOINT 3
+-all routes set to register and login Students and Professors .
+-routes to render requisite ejs views(in addition to views themselves) added to create new classes under a professor ,to add Tasks to a class and to enable students 
+to get enrolled in created classes using a Unique Class Key .
+-Classes are instanced out of a model class that necessarily includes "name" , "key"(system generated) of the class .
+-Classes are modelled to contain references to Student Class instances.
+-Student instances correspond to indidual docs that are made for individual registered students.
+Each Student-doc is made to contain the refernces to following(besides "name","roll","password"):
+   -references to classes that the particular students    
+   -map of string(task id) to evaluation grade for the tasks assigned to that student across all classes.
+
+-requisite routes for above functionalities have been set,doc models modified and used/referenced where doc field data was bidirectionally required to be accessed .
+
+
+
+REPOSITORY LINK:
+https://github.com/octosapien/Hack-It-Out-fullstackoverflow-
+
+G-DRIVE LINK(PROJECT VIDEO):
+https://drive.google.com/drive/folders/1Sk24FK8eA3jAJtxl9OIMP2iiEFa5OicN?usp=share_link
